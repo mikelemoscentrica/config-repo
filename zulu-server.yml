@@ -1,0 +1,54 @@
+info:
+  component: Zuul Server
+
+zuul:
+  routes:
+    accounts: 
+      path: /accounts/**
+      serviceId: accounts
+    customers: 
+      path: /customers/**
+      serviceId: customers
+      strip-prefix: true
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    registry-fetch-interval-seconds: 5
+  instance:
+    hostname: localhost
+---
+spring:
+  profiles: instance-1
+
+server:
+  port: ${port:8765}
+  
+eureka:
+  instance:
+    metadata-map:
+      instanceId: 1
+      
+---
+spring:
+  profiles: instance-2
+  
+server:
+  port: ${port:8766}
+
+eureka:
+  instance:
+    metadata-map:
+      instanceId: 2
+---
+spring:
+  profiles: instance-3
+  
+server:
+  port: ${port:8767}
+
+eureka:
+  instance:
+    metadata-map:
+      instanceId: 3
