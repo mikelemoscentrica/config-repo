@@ -5,10 +5,9 @@ zuul:
   routes:
     accounts: 
       path: /accounts/**
-      serviceId: accounts
+      strip-prefix: true
     customers: 
       path: /customers/**
-      serviceId: customers
       strip-prefix: true
     
 eureka:
