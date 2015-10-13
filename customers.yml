@@ -5,6 +5,9 @@ eureka:
     registry-fetch-interval-seconds: 5
   instance:
     hostname: localhost
+customers:
+  test:
+    verbiage: customers-test-verbiage
 
 ---
 spring:
