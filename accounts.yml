@@ -6,6 +6,9 @@
   instance:
     hostname: localhost
 
+accounts:
+  test:
+    verbiage: accounts-test-verbiage
 ---
 spring:
   profiles: instance-1
