@@ -8,10 +8,13 @@ eureka:
 customers:
   test:
     verbiage: customers-test-verbiage-reset/updated
-
+spring.boot.admin.url=http://localhost:8080
 ---
 spring:
   profiles: instance-1
+  boot:
+    admin:
+      url: http://${adminHost:localhost}:${adminPort:56722}
     
 server:
   port: ${port:56721}
@@ -23,9 +26,12 @@ eureka:
 ---
 spring:
   profiles: instance-2
-    
+  boot:
+    admin:
+      url: http://${adminHost:localhost}:${adminPort:56724}
+        
 server:
-  port: ${port:56722}
+  port: ${port:56723}
   
 eureka:
   instance:
@@ -34,9 +40,13 @@ eureka:
 ---
 spring:
   profiles: instance-3
+  boot:
+    admin:
+      url: http://${adminHost:localhost}:${adminPort:56726}
+    
     
 server:
-  port: ${port:56723}
+  port: ${port:56725}
   
 eureka:
   instance:
