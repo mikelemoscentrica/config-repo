@@ -20,10 +20,6 @@ eureka:
 ---
 spring:
   profiles: instance-1
-  boot:
-    admin:
-      url: http://${adminHost:localhost}:${adminPort:8760}
-    
 
 server:
   port: ${port:8761}
@@ -36,10 +32,6 @@ eureka:
 ---
 spring:
   profiles: instance-2
-  boot:
-    admin:
-      url: http://${adminHost:localhost}:${adminPort:8762}
-    
   
 server:
   port: ${port:8763}
@@ -51,9 +43,6 @@ eureka:
 ---
 spring:
   profiles: instance-3
-  boot:
-    admin:
-      url: http://${adminHost:localhost}:${adminPort:8764}
   
 server:
   port: ${port:8765}
