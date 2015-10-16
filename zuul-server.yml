@@ -22,7 +22,7 @@ spring:
   profiles: instance-1
 
 server:
-  port: ${port:8761}
+  port: ${port:8771}
   
 eureka:
   instance:
@@ -34,7 +34,7 @@ spring:
   profiles: instance-2
   
 server:
-  port: ${port:8763}
+  port: ${port:8773}
 
 eureka:
   instance:
@@ -45,7 +45,7 @@ spring:
   profiles: instance-3
   
 server:
-  port: ${port:8765}
+  port: ${port:8775}
 
 eureka:
   instance:
