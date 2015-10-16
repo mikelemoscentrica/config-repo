@@ -1,6 +1,9 @@
 server:
   port: ${port:8761}
-
+  boot:
+    admin:
+      url: http://${adminHost:localhost}:${adminPort:56520}
+    
 eureka:
   client:
     registerWithEureka: false
