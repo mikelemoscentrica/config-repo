@@ -12,9 +12,12 @@ accounts:
 ---
 spring:
   profiles: instance-1
+  boot:
+    admin:
+      url: http://${adminHost:localhost}:${adminPort:56620}
     
 server:
-  port: ${port:56723}
+  port: ${port:56621}
 
 eureka:
   instance:
@@ -23,9 +26,13 @@ eureka:
 ---
 spring:
   profiles: instance-2
+  boot:
+    admin:
+      url: http://${adminHost:localhost}:${adminPort:56622}
+    
     
 server:
-  port: ${port:56724}
+  port: ${port:56623}
   
 eureka:
   instance:
@@ -34,6 +41,9 @@ eureka:
 ---
 spring:
   profiles: instance-3
+  boot:
+    admin:
+      url: http://${adminHost:localhost}:${adminPort:56724}
     
 server:
   port: ${port:56725}
