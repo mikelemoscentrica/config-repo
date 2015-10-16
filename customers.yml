@@ -7,7 +7,7 @@ eureka:
     hostname: localhost
 customers:
   test:
-    verbiage: customers-test-verbiage-updated
+    verbiage: customers-test-verbiage-reset
 
 ---
 spring:
