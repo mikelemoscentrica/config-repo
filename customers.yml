@@ -12,9 +12,6 @@ customers:
 ---
 spring:
   profiles: instance-1
-  boot:
-    admin:
-      url: http://${adminHost:localhost}:${adminPort:56722}
     
 server:
   port: ${port:56721}
@@ -26,9 +23,6 @@ eureka:
 ---
 spring:
   profiles: instance-2
-  boot:
-    admin:
-      url: http://${adminHost:localhost}:${adminPort:56724}
         
 server:
   port: ${port:56723}
@@ -40,9 +34,6 @@ eureka:
 ---
 spring:
   profiles: instance-3
-  boot:
-    admin:
-      url: http://${adminHost:localhost}:${adminPort:56726}
     
     
 server:
