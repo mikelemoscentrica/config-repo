@@ -29,6 +29,10 @@ eureka:
   instance:
     metadata-map:
       instanceId: 1
+
+turbine:
+  appConfig: customers,accounts
+  clusterNameExpression: 'default'
       
 ---
 spring:
