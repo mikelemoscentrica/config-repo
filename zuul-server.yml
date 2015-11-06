@@ -1,5 +1,11 @@
 info:
   component: Zuul Server
+  
+proxy:
+  auth:
+    routes:
+      customers: oauth2
+      accounts: oauth2
 
 zuul:
   routes:
