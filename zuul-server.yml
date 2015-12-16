@@ -39,6 +39,10 @@ spring:
 
 server:
   port: ${port:8771}
+  ssl:
+    key-store: classpath:keystore.jks
+    key-store-password: password
+    key-password: password12
   
 eureka:
   instance:
@@ -55,7 +59,11 @@ spring:
   
 server:
   port: ${port:8773}
-
+  ssl:
+    key-store: classpath:keystore.jks
+    key-store-password: password
+    key-password: password12
+    
 eureka:
   instance:
     metadata-map:
@@ -66,7 +74,11 @@ spring:
   
 server:
   port: ${port:8775}
-
+  ssl:
+    key-store: classpath:keystore.jks
+    key-store-password: password
+    key-password: password12
+    
 eureka:
   instance:
     metadata-map:
