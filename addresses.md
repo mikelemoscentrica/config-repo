@@ -1,0 +1,13 @@
+memcached:
+  addresses: 192.168.99.100:32768
+  
+server:
+  port: 8080
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    registry-fetch-interval-seconds: 5
+  instance:
+    hostname: localhost
