@@ -1,19 +1,10 @@
 info:
   component: Zuul Server
   
-proxy:
-  auth:
-    routes:
-      customers: oauth2
-      accounts: oauth2
-
 zuul:
   routes:
     accounts: 
-      path: /accounts/**
-      strip-prefix: true
-    customers: 
-      path: /customers/**
+      path: /api/addresses/**
       strip-prefix: true
     
 eureka:
@@ -23,16 +14,6 @@ eureka:
     registry-fetch-interval-seconds: 5
   instance:
     hostname: localhost
-
-spring:
-  oauth2:
-    client:
-      accessTokenUri: http://localhost:8080/oauth/token
-      userAuthorizationUri: http://localhost:8080/oauth/authorize
-      clientId: acme
-      clientSecret: acmesecret
-    resource:
-      userInfoUri: http://localhost:8080/user
 ---
 spring:
   profiles: instance-1
@@ -48,11 +29,6 @@ eureka:
   instance:
     metadata-map:
       instanceId: 1
-
-turbine:
-  appConfig: customers,accounts
-  clusterNameExpression: 'default'
-      
 ---
 spring:
   profiles: instance-2
