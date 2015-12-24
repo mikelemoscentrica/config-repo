@@ -3,7 +3,7 @@ memcached:
   
 server:
   port: 9090
-  servlet-path: /spring
+  servlet-path: /management
   
 eureka:
   client:
