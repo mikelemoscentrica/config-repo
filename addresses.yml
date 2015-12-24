@@ -2,7 +2,7 @@ memcached:
   addresses: 192.168.99.100:32768
   
 server:
-  port: 8080
+  port: 9090
   
 eureka:
   client:
