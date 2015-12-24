@@ -1,12 +1,6 @@
 info:
   component: Hystrix Dashboard
   
-endpoints:
-  restart:
-    enabled: true
-  shutdown:
-    enabled: true
-
 server:
   port: 8681
 
