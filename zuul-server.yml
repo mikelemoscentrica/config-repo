@@ -3,7 +3,7 @@ info:
   
 zuul:
   routes:
-    accounts: 
+    addresses: 
       path: /api/addresses/**
       strip-prefix: true
     
