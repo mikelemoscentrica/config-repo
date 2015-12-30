@@ -2,10 +2,11 @@ info:
   component: Zuul Server
   
 zuul:
+  ignoredServices: '*'
   routes:
     addresses: 
-      path: /api/addresses/**
-      strip-prefix: true
+      path: /addresses/**
+      strip-prefix: false
     
 eureka:
   client:
