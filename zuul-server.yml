@@ -6,7 +6,6 @@ zuul:
   routes:
     addresses: 
       path: /addresses/**
-      strip-prefix: false
     
 eureka:
   client:
