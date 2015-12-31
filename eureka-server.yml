@@ -9,3 +9,7 @@ eureka:
     waitTimeInMsWhenSyncEmpty: 0
   instance:
     hostname: localhost
+
+spring:
+  rabbitmq:
+    addresses: 192.168.99.100:32773
