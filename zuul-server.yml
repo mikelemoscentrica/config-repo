@@ -23,10 +23,6 @@ spring:
 
 server:
   port: ${port:8771}
-  ssl:
-    key-store: classpath:keystore.jks
-    key-store-password: password
-    key-password: password12
   
 eureka:
   instance:
