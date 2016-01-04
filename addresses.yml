@@ -1,6 +1,10 @@
 memcached:
   addresses: 192.168.99.100:32768
   
+spring:
+  rabbitmq:
+    addresses: 192.168.99.100:32770
+  
 server:
   port: 9090
   servlet-path: /management
