@@ -6,8 +6,8 @@ spring:
     addresses: 192.168.99.100:32770
     
 turbine:
-  clusterNameExpression: new String("default")
-  appConfig: addresses
+  clusterNameExpression: 'default'
+  appConfig: addresses, zuul
 
 server:
   port: 8989
