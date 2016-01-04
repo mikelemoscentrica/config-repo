@@ -1,6 +1,10 @@
 info:
   component: Turbine
-
+  
+spring:
+  rabbitmq:
+    addresses: 192.168.99.100:32770
+    
 turbine:
   clusterNameExpression: new String("default")
   appConfig: addresses
