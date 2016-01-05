@@ -10,10 +10,10 @@ turbine:
   appConfig: addresses, zuul
 
 server:
-  port: ${port:8888}
+  port: ${port:8781}
 
 management:
-  port: ${port:9999}
+  port: ${port:8989}
 
 eureka:
   instance:
