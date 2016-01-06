@@ -10,7 +10,7 @@ server:
 
 address:
   lookup:
-    parallelism: 5
+    parallelism: 15
   
 eureka:
   instance:
