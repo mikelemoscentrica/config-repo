@@ -10,7 +10,7 @@ turbine:
   appConfig: addresses, zuul
 
 server:
-  port: ${port:8781}
+  port: ${port:8111}
 
 management:
   port: ${port:8989}
