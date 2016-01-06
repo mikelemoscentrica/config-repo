@@ -1,6 +1,10 @@
 memcached:
   addresses: 192.168.99.100:32768
   
+address:
+  lookup:
+    parallelism: 5
+  
 spring:
   rabbitmq:
     addresses: localhost:5672
