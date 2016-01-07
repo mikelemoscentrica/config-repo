@@ -10,10 +10,10 @@ turbine:
   appConfig: addresses
 
 server:
-  port: ${port:8111}
+  port: ${port:8989}
 
 management:
-  port: ${port:8989}
+  port: ${port:8990}
 
 logging:
   level:
