@@ -2,10 +2,6 @@ server:
   port: ${port:8761}
     
 eureka:
-  server:
-    enableSelfPreservation: false
-  instance:
-    preferIpAddress: true
   client:
     registerWithEureka: false
     fetchRegistry: false
