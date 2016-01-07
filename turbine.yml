@@ -15,6 +15,11 @@ server:
 management:
   port: ${port:8989}
 
+logging:
+  level:
+    root: INFO
+    com.netflix.discovery: 'OFF'
+
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 10
