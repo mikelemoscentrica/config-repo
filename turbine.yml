@@ -15,7 +15,7 @@ spring:
 
 turbine:
   clusterNameExpression: 'default'
-  appConfig: addresses
+  appConfig: zuul
 
 server:
   port: ${port:8989}
