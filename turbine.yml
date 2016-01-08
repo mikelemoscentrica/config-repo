@@ -1,14 +1,6 @@
 info:
   component: Turbine
 
-PREFIX:
-  
-endpoints:
-  restart:
-    enabled: true
-  shutdown:
-    enabled: true
-
 spring:
   rabbitmq:
     addresses: 192.168.99.100:32770
@@ -21,12 +13,7 @@ server:
   port: ${port:8989}
 
 management:
-  port: 8990
-
-logging:
-  level:
-    root: debug
-    com.netflix.discovery: 'OFF'
+  port: -1
 
 eureka:
   instance:
