@@ -13,7 +13,7 @@ server:
   port: ${port:8989}
 
 management:
-  port: 8990
+  port: -1
 
 eureka:
   instance:
