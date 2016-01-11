@@ -17,9 +17,7 @@ eureka:
 
 spring:
   rabbitmq:
-    addresses: localhost:5672
-    username: guest
-    password: guest
+    addresses: 192.168.99.100:32770
 ---
 spring:
   profiles: instance-1
