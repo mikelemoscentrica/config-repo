@@ -18,6 +18,10 @@ eureka:
 spring:
   rabbitmq:
     addresses: 192.168.99.100:32770
+
+logging:
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss.SSS} [trace=%X{X-Trace-Id:-},span=%X{X-Span-Id:-}] [%15.15t] %-40.40logger{39}: %m%n'
 ---
 spring:
   profiles: instance-1
