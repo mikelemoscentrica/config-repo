@@ -28,6 +28,9 @@ spring:
 
 server:
   port: ${port:8771}
+
+management:
+  port: 8871
   
 eureka:
   instance:
@@ -39,7 +42,9 @@ spring:
   
 server:
   port: ${port:8773}
-  
+
+management:
+  port: 8873
     
 eureka:
   instance:
@@ -51,6 +56,9 @@ spring:
   
 server:
   port: ${port:8775}
+
+management:
+  port: 8875
     
 eureka:
   instance:
