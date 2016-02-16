@@ -4,6 +4,10 @@ info:
 server:
   port: 8681
 
+spring:
+  rabbitmq:
+    addresses: localhost:5672
+
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 10
