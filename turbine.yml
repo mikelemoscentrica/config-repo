@@ -2,7 +2,7 @@ info:
   component: Turbine
 
 turbine:
-  appConfig: zuul-server,addresses
+  appConfig: zuul-server
   clusterNameExpression: new String("default")
   
 server:
