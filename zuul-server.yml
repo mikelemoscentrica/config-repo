@@ -36,6 +36,7 @@ eureka:
   instance:
     metadata-map:
       instanceId: 1
+      hostname: 127.0.0.1
 ---
 spring:
   profiles: instance-2
