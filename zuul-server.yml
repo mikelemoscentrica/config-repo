@@ -6,6 +6,16 @@ zuul:
   routes:
     addresses: 
       path: /addresses/**
+    cors:
+    /*:
+      allowedOrigins: 
+        - www.britishgas.co.uk
+        - www.example.com
+      allowedMethods:
+        - GET
+        - POST
+        - PATCH
+        - DELETE
     
 eureka:
   client:
