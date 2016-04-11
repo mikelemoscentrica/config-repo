@@ -6,6 +6,8 @@ zuul:
   routes:
     addresses: 
       path: /addresses/**
+    tariffs: 
+      path: /tariffs/**    
   cors:
     /*:
       allowedOrigins:
