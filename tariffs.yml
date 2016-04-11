@@ -17,3 +17,6 @@ eureka:
     registry-fetch-interval-seconds: 5
   instance:
     hostname: localhost
+    metadata-map:
+      instanceId: 1
+
