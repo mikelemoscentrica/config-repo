@@ -9,7 +9,9 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
   instance:
+    instanceId: 1
     hostname: localhost
+    
 
 spring:
   rabbitmq:
