@@ -9,7 +9,7 @@ redis:
 repository:
   url: https://appServers
   
-appServers:
+cqRepository:
   ribbon:
     listOfServers: https://10.224.70.15:9001,https://10.224.70.74:9001
   
