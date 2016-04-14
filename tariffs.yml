@@ -7,7 +7,7 @@ redis:
   port: 6379
 
 repository:
-  url: http://appServers
+  url: https://appServers
   
 appServers:
   ribbon:
