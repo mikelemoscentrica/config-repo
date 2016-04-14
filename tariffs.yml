@@ -3,7 +3,7 @@ spring:
     addresses: 192.168.99.100:32770
 
 redis:
-  host: 192.168.99.100
+  host: localhost
   port: 6379
 
 repository:
