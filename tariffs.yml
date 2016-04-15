@@ -13,7 +13,7 @@ ribbon:
 cqRepository:
   ribbon:
 #    listOfServers: 10.224.70.15:9001,10.224.70.74:9001
-    listOfServers: 10.224.70.15:9001,10.224.70.74:9001
+    listOfServers: test.com
   
 server:
   port: ${port:8083}
