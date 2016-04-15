@@ -37,8 +37,4 @@ hystrix:
             timeoutInMilliseconds: 30000
 
 logging:
-  level:
-    com.netflix.discovery: 'INFO'
-    org.springframework.cloud: 'DEBUG'
-    org.springframework.web: 'DEBUG'
-    feign: 'DEBUG'
+  level: 'DEBUG'
