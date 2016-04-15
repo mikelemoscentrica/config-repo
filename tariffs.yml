@@ -40,4 +40,5 @@ logging:
   level:
     com.netflix.discovery: 'INFO'
     org.springframework.cloud: 'DEBUG'
-    feign: 'BASIC'
+    org.springframework.web: 'DEBUG'
+    feign: 'DEBUG'
