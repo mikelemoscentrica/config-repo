@@ -37,4 +37,5 @@ hystrix:
             timeoutInMilliseconds: 30000
 
 logging:
-  level: 'DEBUG'
+  level:
+    ROOT: 'DEBUG'
