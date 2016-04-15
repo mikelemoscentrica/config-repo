@@ -38,4 +38,6 @@ hystrix:
 
 logging:
   level:
-    ROOT: 'DEBUG'
+    com.netflix.discovery: 'INFO'
+    org.springframework.cloud: 'DEBUG'
+    feign: 'DEBUG
