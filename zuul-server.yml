@@ -18,6 +18,25 @@ zuul:
         - POST
         - PATCH
         - DELETE
+online:
+  ignoredPaths:
+    - /**/health
+    - /**/info
+    - /**/metrics/**
+    - /**/refresh
+    - /**/restart
+    - /**/dump
+    - /**/pause
+    - /**/bus/**
+    - /**/beans
+    - /**/mappings
+    - /**/env/**
+    - /**/resume
+    - /**/configprops
+    - /**/autoconfig
+    - /**/trace
+    - /**/features
+    - /**/archaius
     
 eureka:
   client:
