@@ -1,0 +1,53 @@
+spring:
+  datasource:
+    driverClassName: oracle.jdbc.driver.OracleDriver
+    url: ${jdbc.url:jdbc:oracle:thin:@localhost:1521:xe}
+    username: ${jdbc.username:ol_master}
+    password: ${jdbc.password:password12}
+    testOnBorrow: true
+    validationQuery: SELECT 1 FROM DUAL
+    maxWait: 1000
+  
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: ${eureka.serviceUrl:http://localhost:8761/eureka/}
+    registry-fetch-interval-seconds: 5
+    
+redis:
+  hostname: ${redis.host:localhost}
+  port: ${redis.port:6379}
+  
+encryption:
+  AES:
+    cbc-iv: ${aes.iv}
+    seed: ${aes.seed}
+
+server:
+  ssl:
+    enabled: true
+    key-store: ${ssl.keystore:classpath:keystore.p12}
+    key-store-password: ${ssl.key-store-password:password12}
+    key-store-type: ${ssl.key-store-type:PKCS12}
+    key-alias: ${ssl.key-alias:uaa}
+    
+---
+spring:
+  profiles: instance-1
+
+server:
+  port: ${server.port:9001}
+---
+spring:
+  profiles: instance-2
+
+server:
+  port: ${server.port:9002}
+---
+spring:
+  profiles: instance-3
+
+server:
+  port: ${server.port:9003}
