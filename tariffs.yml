@@ -3,8 +3,8 @@ spring:
     addresses: localhost:5672
 
 redis:
-  host: localhost
-  port: 6379
+  host: ${redis.host:10.224.70.15}
+  port: ${redis.port:1234}
 
 ribbon:
   eureka:
