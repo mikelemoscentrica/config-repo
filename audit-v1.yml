@@ -3,7 +3,7 @@ server:
 
 spring:
   rabbitmq:
-    addresses: localhost:5672
+    addresses: ${rabbitmq.host:localhost}:${rabbitmq.port:5672}
     username: guest
     password: guest
   datasource:
