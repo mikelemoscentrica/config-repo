@@ -11,6 +11,6 @@ spring:
     url: jdbc:oracle:thin:@10.224.70.16:1525:DVSOL1_1
     username: ol_master
     password: ROLE_MASTER
-    testOnBorrow: true
-    validationQuery: SELECT 1 FROM DUAL
-    maxWait: 1000
+    #testOnBorrow: true
+    #validationQuery: SELECT 1 FROM DUAL
+    #maxWait: 1000
