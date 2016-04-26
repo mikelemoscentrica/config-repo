@@ -4,7 +4,8 @@ spring:
   redis:
     sentinel:
       master: mymaster
-      nodes: localhost:26379
+      nodes: 
+        - localhost:26379
 
 ribbon:
   eureka:
