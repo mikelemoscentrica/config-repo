@@ -16,7 +16,7 @@ cqRepository:
     #listOfServers: 10.224.70.74:9001
   
 server:
-  port: ${port:8083}
+  port: ${port:9080}
   servlet-path: /management
   
 eureka:
