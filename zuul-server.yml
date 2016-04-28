@@ -7,7 +7,9 @@ zuul:
     addresses: 
       path: /addresses/**
     tariffs: 
-      path: /tariffs/**    
+      path: /tariffs/**   
+    audits: 
+      path: /audits/**   
   cors:
     /*:
       allowedOrigins:
