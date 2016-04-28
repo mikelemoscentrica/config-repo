@@ -17,6 +17,7 @@ cors:
       allowedOrigins:
         - www.britishgas.co.uk
         - www.example.com
+        - chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
       allowedMethods:
         - GET
         - POST
