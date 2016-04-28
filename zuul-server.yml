@@ -17,11 +17,11 @@ cors:
       allowedOrigins:
         - www.britishgas.co.uk
         - www.example.com
-     allowedMethods
-       - GET
-       - POST
-       - PATCH
-       - DELETE
+      allowedMethods:
+        - GET
+        - POST
+        - PATCH
+        - DELETE
 
 online:
   ignoredPaths:
