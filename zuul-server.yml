@@ -9,18 +9,20 @@ zuul:
     tariffs: 
       path: /tariffs/**   
     audits: 
-      path: /audits/**   
-  cors:
-    mappings:
-      /*:
-        allowedOrigins:
-          - www.britishgas.co.uk
-          - www.example.com
-        allowedMethods:
-          - GET
-          - POST
-          - PATCH
-          - DELETE
+      path: /audits/**
+
+cors:
+  mappings:
+    /*:
+      allowedOrigins:
+        - www.britishgas.co.uk
+        - www.example.com
+     allowedMethods
+       - GET
+       - POST
+       - PATCH
+       - DELETE
+
 online:
   ignoredPaths:
     - /**/health
