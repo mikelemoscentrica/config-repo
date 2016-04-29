@@ -9,6 +9,12 @@ spring:
     maxWait: 1000
   
 eureka:
+  instance:
+    statusPageUrl: https://${eureka.hostname}/info
+    healthCheckUrl: https://${eureka.hostname}/health
+    homePageUrl: https://${eureka.hostname}/
+    securePortEnabled: true
+    securePort: ${server.port}
   client:
     healthcheck:
       enabled: true
