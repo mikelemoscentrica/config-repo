@@ -67,9 +67,10 @@ hystrix:
 
 logging:
   level:
-    root: DEBUG
+    root: INFO
+    org.apache.http: DEBUG
   pattern:
-    console: '%d{yyyy-MM-dd HH:mm:ss.SSS} [trace=%X{X-Trace-Id:-},span=%X{X-Span-Id:-}] [%15.15t] %-40.40logger{39}: %m%n'
+    console: '%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [trace=%X{X-Trace-Id:-},span=%X{X-Span-Id:-}] [%15.15t] %-40.40logger{39}: %m%n'
 ---
 spring:
   profiles: instance-1
