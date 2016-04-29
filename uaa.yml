@@ -10,9 +10,10 @@ spring:
   
 eureka:
   instance:
-    statusPageUrl: https://${eureka.hostname}/info
-    healthCheckUrl: https://${eureka.hostname}/health
-    homePageUrl: https://${eureka.hostname}/
+    hostname: localhost:${server.port}
+    statusPageUrl: https://${eureka.instance.hostname}/info
+    healthCheckUrl: https://${eureka.instance.hostname}/health
+    homePageUrl: https://${eureka.instance.hostname}/
     securePortEnabled: true
     securePort: ${server.port}
   client:
