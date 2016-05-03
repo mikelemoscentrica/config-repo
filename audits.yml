@@ -6,3 +6,8 @@ spring:
     addresses: ${rabbitmq.host:localhost}:${rabbitmq.port:5672}
     username: guest
     password: guest
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: audits
