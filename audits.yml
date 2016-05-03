@@ -11,3 +11,5 @@ spring:
       bindings:
         input:
           destination: audits
+        output:
+          destination: audits
