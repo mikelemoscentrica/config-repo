@@ -1,0 +1,50 @@
+spring:
+  rabbitmq:
+    addresses: localhost:5672
+
+memcached:
+  addresses: 192.168.99.100:32770
+
+server:
+  port: ${port:9060}
+  servlet-path: /management
+
+customer:
+  info:
+    caller:
+      endpoint: http://tpicxtmqa.uk.centricaplc.com:50000/XISOAPAdapter/MessageServlet?senderParty=Online&senderService=BSR_WebService_PI&receiverParty=&receiverService=&interface=PartyManagementManageCustomer24x7&interfaceNamespace=urn%3Abritishgas.co.uk%3AOnline%3AParty
+      expiry: 3600
+
+webservice:
+  authentication:
+    username: ONLSRVUSER
+    password: usatoday1
+
+logging:
+  level:
+    org.springframework.ws.client.MessageTracing.sent: 'TRACE'
+    org.springframework.ws.client.MessageTracing.received: 'TRACE'
+  
+eureka:
+  instance:
+    metadata-map:
+      instanceId: 1
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    registry-fetch-interval-seconds: 5
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: THREAD
+          thread:
+            timeoutInMilliseconds: 30000
+
+logging:
+  level:
+    com.netflix.discovery: 'INFO'
+    org.springframework.cloud: 'DEBUG'
+    feign: 'DEBUG'
