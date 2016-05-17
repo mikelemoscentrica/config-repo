@@ -20,11 +20,6 @@ webservice:
     username: ONLSRVUSER
     password: usatoday1
 
-logging:
-  level:
-    org.springframework.ws.client.MessageTracing.sent: 'TRACE'
-    org.springframework.ws.client.MessageTracing.received: 'TRACE'
-  
 eureka:
   instance:
     metadata-map:
@@ -45,6 +40,7 @@ hystrix:
 
 logging:
   level:
+    org.springframework.ws.client.MessageTracing.sent: 'TRACE'
+    org.springframework.ws.client.MessageTracing.received: 'TRACE'
     com.netflix.discovery: 'INFO'
     org.springframework.cloud: 'DEBUG'
-    feign: 'DEBUG'
