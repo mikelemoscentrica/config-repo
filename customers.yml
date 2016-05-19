@@ -9,6 +9,9 @@ server:
   port: ${port:9060}
   servlet-path: /management
 
+management:
+  port: 9160
+
 customer:
   info:
     caller:
