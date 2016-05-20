@@ -10,6 +10,8 @@ zuul:
       path: /tariffs/**   
     audits: 
       path: /audits/**
+    callbacks: 
+      path: /callbacks/**
 
 cors:
   mappings:
