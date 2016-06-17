@@ -46,7 +46,7 @@ server:
 logging:
   level:
     root: INFO
-    org.hibernate.sql: debug
+    org.hibernate: debug
 ---
 spring:
   profiles: instance-1
