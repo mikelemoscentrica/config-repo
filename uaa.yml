@@ -46,7 +46,6 @@ server:
 logging:
   level:
     root: INFO
-    org.apache.http: DEBUG
 ---
 spring:
   profiles: instance-1
