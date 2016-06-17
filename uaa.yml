@@ -7,6 +7,10 @@ spring:
     testOnBorrow: true
     validationQuery: SELECT 1 FROM DUAL
     maxWait: 1000
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
   
 eureka:
   instance:
