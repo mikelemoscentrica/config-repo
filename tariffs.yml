@@ -9,7 +9,11 @@ spring:
 ribbon:
   eureka:
    enabled: false
-  
+
+feign:
+  histrix:
+    enabled: false
+
 cqRepository:
   ribbon:
     listOfServers: 10.224.70.15:9001
@@ -36,6 +40,11 @@ hystrix:
           strategy: THREAD
           thread:
             timeoutInMilliseconds: 30000
+    choose:
+      default:
+        execution:
+          timeout:
+            enabled: false
 
 logging:
   level:
