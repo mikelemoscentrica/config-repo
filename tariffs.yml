@@ -12,14 +12,12 @@ ribbon:
 
 cqRepository:
   ribbon:
-    listOfServers: 10.224.70.15:9001
-    #listOfServers: 10.224.70.74:9001
     ConnectTimeout: 250
     ReadTimeout: 1000
     OkToRetryOnAllOperations: true
-    MaxAutoRetriesNextServer: 2
-    MaxAutoRetries: 2
-    
+    listOfServers: 10.224.70.15:9001
+    #listOfServers: 10.224.70.74:9001
+
 server:
   port: ${port:9080}
   servlet-path: /management
