@@ -12,9 +12,6 @@ ribbon:
 
 cqRepository:
   ribbon:
-    #ConnectTimeout: 250
-    #ReadTimeout: 1000
-    #OkToRetryOnAllOperations: true
     listOfServers: 10.224.70.15:9001
     #listOfServers: 10.224.70.74:9001
 
