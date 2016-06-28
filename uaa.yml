@@ -10,7 +10,7 @@ spring:
   redis:
     sentinel:
       master: mymaster
-      nodes: localhost:6379
+      nodes: localhost:26379
   jpa:
     show-sql: true
     properties:
