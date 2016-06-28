@@ -14,6 +14,9 @@ ribbon:
    enabled: false
 
 webservice:
+  authentication:
+    username: ONLSRVUSER
+    password: usatoday1
   personalProjection:
     caller:
       endpoint: http://tpicxtmqa.uk.centricaplc.com:50000/XISOAPAdapter/MessageServlet?senderParty=Online&senderService=BSR_WebService_PI&receiverParty=&receiverService=&interface=QueryProductTariffsOut&interfaceNamespace=urn%3Abritishgas.co.uk%3AEnterprise%3AProduct
@@ -49,3 +52,5 @@ hystrix:
 logging:
   level:
     root: INFO
+    org.springframework.ws.client.MessageTracing.sent: 'TRACE'
+    org.springframework.ws.client.MessageTracing.received: 'TRACE'
