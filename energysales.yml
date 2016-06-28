@@ -13,6 +13,12 @@ ribbon:
   eureka:
    enabled: false
 
+webservice
+  personalProjection
+    caller
+      endpoint: http://localhost:50000
+      expiry: 3600
+
 cqRepository:
   ribbon:
     listOfServers: 10.224.70.15:9001
