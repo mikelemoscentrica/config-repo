@@ -16,7 +16,7 @@ ribbon:
 webservice:
   personalProjection:
     caller:
-      endpoint: http://localhost:50000
+      endpoint: http://tpicxtmqa.uk.centricaplc.com:50000/XISOAPAdapter/MessageServlet?senderParty=Online&senderService=BSR_WebService_PI&receiverParty=&receiverService=&interface=QueryProductTariffsOut&interfaceNamespace=urn%3Abritishgas.co.uk%3AEnterprise%3AProduct
       expiry: 3600
 
 cqRepository:
