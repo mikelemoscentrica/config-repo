@@ -9,6 +9,7 @@ zuul:
   routes:
     addresses: 
       path: /*/addresses/**
+      serviceId: addresses-v1
     tariffs: 
       path: /tariffs/**   
     audits: 
