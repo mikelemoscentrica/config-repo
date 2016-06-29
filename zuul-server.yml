@@ -2,6 +2,8 @@ info:
   component: Zuul Server
   
 zuul:
+  debug:
+    request: true
   stripPrefix: false
   ignoredServices: '*'
   routes:
