@@ -6,7 +6,7 @@ zuul:
   ignoredServices: '*'
   routes:
     addresses: 
-      path: /addresses/**
+      path: /*/addresses/**
     tariffs: 
       path: /tariffs/**   
     audits: 
