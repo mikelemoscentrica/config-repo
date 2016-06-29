@@ -1,4 +1,6 @@
 spring:
+  jersey:
+    applicationPath: ${api.version:/*}
   rabbitmq:
     addresses: 192.168.99.100:5672
 
