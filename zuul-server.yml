@@ -8,8 +8,7 @@ zuul:
   ignoredServices: '*'
   routes:
     addresses: 
-      path: /*/addresses/**
-      serviceId: addresses-v1
+      path: /addresses/**
     tariffs: 
       path: /tariffs/**   
     audits: 
