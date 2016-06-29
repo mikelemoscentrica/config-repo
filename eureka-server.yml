@@ -13,4 +13,4 @@ eureka:
 
 spring:
   rabbitmq:
-    addresses: localhost:5672
+    addresses: 192.168.99.100:5672
