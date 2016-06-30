@@ -20,9 +20,11 @@ spring:
 eureka:
   instance:
     hostname: localhost
-    statusPageUrl: http://${eureka.instance.hostname}/info
-    healthCheckUrl: http://${eureka.instance.hostname}/health
-    homePageUrl: http://${eureka.instance.hostname}/
+    statusPageUrl: https://${eureka.instance.hostname}/info
+    healthCheckUrl: https://${eureka.instance.hostname}/health
+    homePageUrl: https://${eureka.instance.hostname}/
+    securePortEnabled: true
+    securePort: ${server.port}
   client:
     healthcheck:
       enabled: true
@@ -35,10 +37,12 @@ encryption:
     cbc-iv: ${aes.iv}
     seed: ${aes.seed}
 
-
-logging:
-  level:
-    root: INFO
+server:
+  ssl:
+    enabled: true
+    key-store: ${ssl.keystore:classpath:keystore.jks}
+    key-store-password: ${ssl.key-store-password:password12}
+    key-alias: ${ssl.key-alias:uaa}
 ---
 spring:
   profiles: instance-1
