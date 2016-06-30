@@ -3,8 +3,7 @@ info:
   
 zuul:
   stripPrefix: false
-  ignoredServices: 'uaa, audits, zuul-server, eureka-server'
-  
+  ignoredServices: 'uaa, audits, zuul-server, eureka-server, emails'
 
 cors:
   mappings:
