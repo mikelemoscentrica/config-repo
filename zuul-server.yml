@@ -5,7 +5,24 @@ zuul:
   debug:
     request: true
   stripPrefix: false
-  ignoredServices: 'eureka-server, zuul-server, audits, emails, uaa'
+  ignoredServices: '*'
+    routes:
+      addresses: 
+        path: /addresses/**
+      tariffs: 
+        path: /tariffs/**   
+      audits: 
+        path: /audits/**
+      callbacks: 
+        path: /callbacks/**
+      addresses-v1: 
+        path: /v1/addresses/**
+      tariffs-v1: 
+        path: /v1/tariffs/**   
+      audits-v1: 
+        path: /v1/audits/**
+      callbacks-v1: 
+        path: /v1/callbacks/**
 
 cors:
   mappings:
