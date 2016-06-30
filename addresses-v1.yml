@@ -2,7 +2,7 @@ spring:
   jersey:
     applicationPath: ${api.version:/*}
   rabbitmq:
-    addresses: 192.168.99.100:5672
+    addresses: localhost:5672
 
 memcached:
   addresses: 192.168.99.100:32768
