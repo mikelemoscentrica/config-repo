@@ -1,6 +1,4 @@
 spring:
-  jersey:
-    applicationPath: /${api.version:}
   rabbitmq:
     addresses: localhost:5672
 
