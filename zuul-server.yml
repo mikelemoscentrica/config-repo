@@ -5,16 +5,7 @@ zuul:
   debug:
     request: true
   stripPrefix: false
-  ignoredServices: '*'
-  routes:
-    addresses: 
-      path: /addresses/**
-    tariffs: 
-      path: /tariffs/**   
-    audits: 
-      path: /audits/**
-    callbacks: 
-      path: /callbacks/**
+  ignoredServices: 'eureka-server, zuul-server, audits, emails, uaa'
 
 cors:
   mappings:
