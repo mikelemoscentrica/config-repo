@@ -30,7 +30,7 @@ logging:
     console: '%d{yyyy-MM-dd HH:mm:ss.SSS} [trace=%X{X-Trace-Id:-},span=%X{X-Span-Id:-}] [%15.15t] %-40.40logger{39}: %m%n'
 ---
 spring:
-  profiles: instance-1
+  profiles: instance_1
 
 server:
   port: ${port:9010}
@@ -41,7 +41,7 @@ eureka:
       instanceId: 1
 ---
 spring:
-  profiles: instance-2
+  profiles: instance_2
   
 server:
   port: ${port:9011}
@@ -53,7 +53,7 @@ eureka:
       instanceId: 2
 ---
 spring:
-  profiles: instance-3
+  profiles: instance_3
   
 server:
   port: ${port:9012}
