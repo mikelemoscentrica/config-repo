@@ -42,7 +42,7 @@ server:
     enabled: true
     key-store: ${ssl.keystore:classpath:keystore.jks}
     key-store-password: ${ssl.key-store-password:password12}
-    key-alias: ${ssl.key-alias:localhost}
+    key-alias: ${ssl.key-alias:localhost (ca.api.britishgas.co.uk)}
 ---
 spring:
   profiles: instance-1
