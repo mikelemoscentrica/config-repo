@@ -40,7 +40,7 @@ encryption:
 server:
   ssl:
     enabled: true
-    key-store: ${ssl.keystore:classpath:ca-localhost.jks}
+    key-store: ${ssl.keystore:classpath:keystore.jks}
     key-store-password: ${ssl.key-store-password:password12}
     key-alias: ${ssl.key-alias:localhost}
 ---
