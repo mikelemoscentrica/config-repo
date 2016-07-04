@@ -45,6 +45,11 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
     registry-fetch-interval-seconds: 5
 
+server:
+  ssl:
+    trust-store: ${ssl.keystore:classpath:ca-localhost.jks}
+    trust-store-password: ${ssl.key-store-password:password12}
+    
 spring:
   rabbitmq:
     addresses: localhost:5672
