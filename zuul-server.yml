@@ -2,7 +2,7 @@ info:
   component: Zuul Server
   
 zuul:
-  stripPrefix: true
+  stripPrefix: false
   ignoredServices: 'uaa, audits, zuul-server, eureka-server, emails'
 
 cors:
