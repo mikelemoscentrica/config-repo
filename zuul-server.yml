@@ -2,7 +2,7 @@ info:
   component: Zuul Server
   
 zuul:
-  stripPrefix: false
+  stripPrefix: true
   ignoredServices: '*'
   routes:
     addresses-v1: /v1/addresses/**
