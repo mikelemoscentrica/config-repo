@@ -2,10 +2,11 @@ info:
   component: Zuul Server
   
 zuul:
-  stripPrefix: true
   ignoredServices: '*'
   routes:
-    addresses-v1: /v1/addresses/**
+    addresses-v1:
+      path: /v1/addresses/**
+      stripPrefix: true
 
 cors:
   mappings:
