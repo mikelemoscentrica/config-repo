@@ -3,7 +3,9 @@ info:
   
 zuul:
   stripPrefix: false
-  ignoredServices: 'uaa, audits, zuul-server, eureka-server, emails'
+  ignoredServices: '*'
+  routes:
+    addresses-v1: /v1/addresses/**
 
 cors:
   mappings:
