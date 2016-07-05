@@ -6,7 +6,7 @@ zuul:
   routes:
     addresses-v1:
       path: /v1/addresses/**
-      stripPrefix: true
+      stripPrefix: false
 
 cors:
   mappings:
