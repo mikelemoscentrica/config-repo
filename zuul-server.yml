@@ -60,6 +60,10 @@ hystrix:
           strategy: THREAD
           thread:
             timeoutInMilliseconds: 30000
+
+logging:
+  level:
+    root: debug
 ---
 spring:
   profiles: instance-1
