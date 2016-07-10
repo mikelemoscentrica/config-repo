@@ -7,6 +7,9 @@ memcached:
 
 server:
   servlet-path: /management
+  error:
+    whitelabel:
+      enabled: false
 
 address:
   lookup:
