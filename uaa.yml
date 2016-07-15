@@ -16,7 +16,14 @@ spring:
     properties:
       hibernate:
         format_sql: true
-  
+
+cqAuthentication:
+  ribbon:
+    NFLoadBalancerPingClassName: com.netflix.loadbalancer.Ping
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.AvailabilityFilteringRule
+    NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
+    listOfServers: 10.114.69.44:9001
+    
 eureka:
   instance:
     hostname: localhost
