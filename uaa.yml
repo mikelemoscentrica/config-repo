@@ -17,7 +17,7 @@ spring:
       hibernate:
         format_sql: true
 
-cqAuthentication:
+cqServers:
   ribbon:
     NFLoadBalancerPingClassName: com.netflix.loadbalancer.Ping
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.AvailabilityFilteringRule
