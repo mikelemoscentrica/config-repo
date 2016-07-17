@@ -8,7 +8,7 @@ spring:
 
 ribbon:
   eureka:
-   enabled: false
+    enabled: false
 
 server:
   port: ${port:9090}
