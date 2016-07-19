@@ -22,7 +22,7 @@ cqServers:
     NFLoadBalancerPingClassName: com.netflix.loadbalancer.Ping
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.AvailabilityFilteringRule
     NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
-    listOfServers: 10.114.69.44:9001
+    listOfServers: 10.224.70.44:9001
     
 eureka:
   instance:
