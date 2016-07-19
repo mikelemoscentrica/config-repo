@@ -19,7 +19,7 @@ spring:
 
 cqServers:
   ribbon:
-    NFLoadBalancerPingClassName: com.netflix.loadbalancer.Ping
+    NFLoadBalancerPingClassName: com.netflix.loadbalancer.PingUrl
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.AvailabilityFilteringRule
     NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
     listOfServers: 10.224.70.44:9001
