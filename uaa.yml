@@ -63,15 +63,24 @@ spring:
 
 server:
   port: 9001
+
+management:
+  port: 9006
 ---
 spring:
   profiles: instance-2
 
 server:
   port: 9002
+  
+management:
+  port: 9007
 ---
 spring:
   profiles: instance-3
 
 server:
   port: 9003
+
+management:
+  port: 9008
