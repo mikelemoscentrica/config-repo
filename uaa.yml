@@ -17,12 +17,7 @@ spring:
       hibernate:
         format_sql: true
 
-cqServers:
-  ribbon:
-    NFLoadBalancerPingClassName: com.netflix.loadbalancer.PingUrl
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.AvailabilityFilteringRule
-    NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
-    listOfServers: 10.224.70.44:9001
+cqServerUrl: http://localhost:8080
     
 eureka:
   instance:
