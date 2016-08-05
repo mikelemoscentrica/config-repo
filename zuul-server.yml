@@ -16,9 +16,17 @@ cors:
         - 193.67.163.110
         - chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
       allowedMethods:
-        - *
+        - GET
+        - PUT
+        - POST
+        - PATCH
+        - DELETE
+        - OPTIONS
       allowedHeaders:
-        - *
+        - Authorization
+        - X-Client-ID
+        - Content-Type
+        - Accept
 
 online:
   ignoredPaths:
