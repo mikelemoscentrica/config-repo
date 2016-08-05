@@ -12,8 +12,10 @@ cors:
   mappings:
     /**:
       allowedOrigins:
-        - www.britishgas.co.uk
-        - 193.67.163.110
+        - http://www.britishgas.co.uk
+        - https://www.britishgas.co.uk
+        - http://193.67.163.110
+        - https://193.67.163.110
         - chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
       allowedMethods:
         - GET
