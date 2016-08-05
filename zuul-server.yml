@@ -10,7 +10,7 @@ zuul:
 
 cors:
   mappings:
-    /*:
+    /**:
       allowedOrigins:
         - www.britishgas.co.uk
         - chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
