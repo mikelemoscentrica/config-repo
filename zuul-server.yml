@@ -13,12 +13,12 @@ cors:
     /**:
       allowedOrigins:
         - www.britishgas.co.uk
+        - 193.67.163.110
         - chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
       allowedMethods:
-        - GET
-        - POST
-        - PATCH
-        - DELETE
+        - *
+      allowedHeaders:
+        - *
 
 online:
   ignoredPaths:
