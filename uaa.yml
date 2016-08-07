@@ -19,7 +19,7 @@ spring:
 
 management:
   ssl:
-    enabled: false
+    enable: false
     
 endpoints:
   sensitive: true
