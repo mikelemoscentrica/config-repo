@@ -1,0 +1,41 @@
+spring:
+  rabbitmq:
+    addresses: localhost:5672
+  redis:
+    sentinel:
+      master: mymaster
+      nodes: localhost:26379
+
+ribbon:
+  eureka:
+    enabled: false
+
+contentRepository:
+  ribbon:
+    listOfServers: 10.224.70.72:9001
+
+server:
+  port: ${port:9090}
+  servlet-path: /management
+  
+eureka:
+  instance:
+    metadata-map:
+      instanceId: 1
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    registry-fetch-interval-seconds: 5
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: THREAD
+          thread:
+            timeoutInMilliseconds: 30000
+
+logging:
+  level:
+    root: INFO
