@@ -19,6 +19,12 @@ spring:
 
 endpoints:
   sensitive: true
+  trace:
+    enabled: false
+  shutdown:
+    enabled: false
+  restart:
+    enabled: false
   
 cqServerUrl: https://localhost:9033
     
