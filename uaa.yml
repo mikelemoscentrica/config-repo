@@ -17,10 +17,6 @@ spring:
       hibernate:
         format_sql: true
 
-management:
-  ssl:
-    enable: false
-    
 endpoints:
   sensitive: true
   trace:
@@ -74,6 +70,8 @@ server:
 
 management:
   port: 9006
+  ssl:
+    enable: false
 ---
 spring:
   profiles: instance-2
@@ -83,6 +81,8 @@ server:
   
 management:
   port: 9007
+  ssl:
+    enable: false
 ---
 spring:
   profiles: instance-3
@@ -92,3 +92,5 @@ server:
 
 management:
   port: 9008
+  ssl:
+    enable: false
