@@ -18,7 +18,7 @@ spring:
         format_sql: true
 
 endpoints:
-  sensitive: true
+  sensitive: false
   
 cqServerUrl: https://localhost:9033
     
