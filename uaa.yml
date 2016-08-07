@@ -17,6 +17,10 @@ spring:
       hibernate:
         format_sql: true
 
+management:
+  ssl:
+    enabled: false
+    
 endpoints:
   sensitive: true
   trace:
