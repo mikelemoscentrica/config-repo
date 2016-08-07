@@ -17,6 +17,9 @@ spring:
       hibernate:
         format_sql: true
 
+endpoints:
+  sensitive: true
+  
 cqServerUrl: https://localhost:9033
     
 eureka:
