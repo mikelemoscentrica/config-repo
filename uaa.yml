@@ -55,7 +55,6 @@ services:
 logging:
   level:
     ROOT: INFO
-    org.springframework: DEBUG
     uk.co.britishgas: DEBUG
 
 server:
