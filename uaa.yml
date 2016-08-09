@@ -77,7 +77,7 @@ server:
 management:
   port: 9006
   ssl:
-    enabled: false
+    enable: false
 ---
 spring:
   profiles: instance-2
@@ -88,7 +88,7 @@ server:
 management:
   port: 9007
   ssl:
-    enabled: false
+    enable: false
 ---
 spring:
   profiles: instance-3
@@ -99,4 +99,4 @@ server:
 management:
   port: 9008
   ssl:
-    enabled: false
+    enable: false
