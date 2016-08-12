@@ -3,7 +3,7 @@ spring:
     addresses: localhost:5672
 
 memcached:
-  addresses: 192.168.99.100:32768
+  addresses: 172.17.0.2:11211
 
 server:
   servlet-path: /management
