@@ -19,7 +19,7 @@ spring:
 
 authentication:
   login:
-    appUrl: /uaa/oauth/clients
+    appUrl: /identity/
 
 endpoints:
   sensitive: false
