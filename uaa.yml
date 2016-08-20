@@ -17,6 +17,10 @@ spring:
       hibernate:
         format_sql: true
 
+authentication:
+  login:
+    appUrl: /uaa/oauth/clients
+
 endpoints:
   sensitive: false
   trace:
