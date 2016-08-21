@@ -19,10 +19,6 @@ spring:
 
 environment: local
 
-authentication:
-  login:
-    appUrl: /identity/
-
 endpoints:
   sensitive: false
   trace:
