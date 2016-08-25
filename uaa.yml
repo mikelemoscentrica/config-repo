@@ -31,20 +31,20 @@ endpoints:
 cqServers:
   defaultHost: https://localhost:9033
   servers:
-    ? 'https://localhost:9021'
+    ? 'https://localhost-cq1'
     : {
-        name: digital1, 
-        hostnames: [ 'localhost:8443', 'localhost:9001']
+        name: localhost-cq1, 
+        hostnames: [ 'localhost-uaa1' ]
       }
-    ? 'https://localhost:9022'
+    ? 'https://localhost-cq2'
     : {
-        name: digital2,
-        hostnames: [ 'localhost:9002' ]
+        name: localhost-cq2,
+        hostnames: [ 'localhost-uaa2' ]
       }
-    ? 'https://localhost:9033'
+    ? 'https://localhost-cq3'
     : {
-        name: digital3,
-        hostnames: [ 'localhost:9003' ]
+        name: localhost-cq3,
+        hostnames: [ 'localhost-uaa3' ]
       }
 
 eureka:
