@@ -29,7 +29,7 @@ endpoints:
     enabled: false
 
 cqServers:
- defaultHost: https://10.114.69.111
+ defaultHost: 'https://10.114.69.111'
  servers:
    ? 'https://10.114.69.15'
    : {
