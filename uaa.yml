@@ -31,17 +31,17 @@ endpoints:
 cqServers:
   defaultHost: https://localhost:9033
   servers:
-    ? 'https://localhost-cq1'
+    ? 'https://localhost-cq1:9033'
     : {
         name: localhost-cq1, 
         hostnames: [ 'localhost-uaa1' ]
       }
-    ? 'https://localhost-cq2'
+    ? 'https://localhost-cq2:9033'
     : {
         name: localhost-cq2,
         hostnames: [ 'localhost-uaa2' ]
       }
-    ? 'https://localhost-cq3'
+    ? 'https://localhost-cq3:9033'
     : {
         name: localhost-cq3,
         hostnames: [ 'localhost-uaa3' ]
