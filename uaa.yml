@@ -31,7 +31,7 @@ endpoints:
 cqServers:
  defaultHost: 'https://10.114.69.111'
  servers:
-   ? 'https://10.114.69.15'
+   ? "https://10.114.69.15"
    : {
        name: digital-1, 
        hostnames: [ '10.224.70.15', '193.67.163.82', '10.224.70.29' ]
