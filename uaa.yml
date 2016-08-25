@@ -34,16 +34,16 @@ cqServers:
     'https://localhost:9021':
       name: digital-1
       hostnames: 
-        - 'localhost:8443'
-        - 'localhost:9001'
+        - localhost:8443
+        - localhost:9001
     'https://localhost:9022':
       name: digital-2
       hostnames:
-        - 'localhost:9002'
+        - localhost:9002
     'https://localhost:9033'
       name: digital-3
       hostnames:
-        - 'localhost:9003'
+        - localhost:9003
 
 eureka:
   instance:
