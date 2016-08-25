@@ -27,9 +27,24 @@ endpoints:
     enabled: false
   restart:
     enabled: false
-  
-cqServerUrl: https://localhost:9033
-    
+
+cqServers:
+  defaultHost: https://localhost:9033
+  servers:
+    'https://localhost:9021':
+      name: digital-1
+      hostnames: 
+        - 'localhost:8443'
+        - 'localhost:9001'
+    'https://localhost:9022':
+      name: digital-2
+      hostnames:
+        - 'localhost:9002'
+    'https://localhost:9033'
+      name: digital-3
+      hostnames:
+        - 'localhost:9003'
+
 eureka:
   instance:
     hostname: localhost
