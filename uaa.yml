@@ -31,7 +31,7 @@ endpoints:
 cqServers:
  defaultHost: 'https://localhost'
  servers:
-   ? "localhost
+   ? localhost
    : {
        name: digital-1, 
        hostnames: [ 'localhost' ]
