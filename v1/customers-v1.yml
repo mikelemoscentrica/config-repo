@@ -54,8 +54,6 @@ logging:
   level:
     org.springframework.ws.client.MessageTracing.sent: 'TRACE'
     org.springframework.ws.client.MessageTracing.received: 'TRACE'
-    com.netflix.discovery: 'INFO'
-    org.springframework.cloud: 'DEBUG'
     
 services:
   addresses: addresses-v1
