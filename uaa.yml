@@ -30,12 +30,6 @@ endpoints:
 
 cqServers:
  defaultHost: 'https://localhost:9033'
- servers:
-   ? localhost
-   : {
-       name: digital-1, 
-       hostnames: [ 'localhost' ]
-     }
 
 eureka:
   instance:
