@@ -7,6 +7,9 @@ zuul:
     addresses-v1:
       path: /v1/addresses/**
       stripPrefix: false
+    customers-v1:
+      path: /v1/customers/**
+      stripPrefix: false
 
 cors:
   mappings:
