@@ -24,7 +24,7 @@ management:
 customer:
   info:
     caller:
-      endpoint: http://193.67.163.110/tpicxtmqa.uk.centricaplc.com:50000/XISOAPAdapter/MessageServlet?senderParty=Online&senderService=BSR_WebService_PI&receiverParty=&receiverService=&interface=PartyManagementManageCustomer24x7&interfaceNamespace=urn%3Abritishgas.co.uk%3AOnline%3AParty
+      endpoint: http://193.67.163.110/tpicxtmqa/XISOAPAdapter/MessageServlet?senderParty=Online&senderService=BSR_WebService_PI&receiverParty=&receiverService=&interface=PartyManagementManageCustomer24x7&interfaceNamespace=urn%3Abritishgas.co.uk%3AOnline%3AParty
       expiry: 3600
 
 webservice:
