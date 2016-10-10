@@ -9,9 +9,10 @@ spring:
     maxWait: 1000
   rabbitmq:
     addresses: localhost:5672
-    
-memcached:
-  addresses: 192.168.99.100:32770
+  redis:
+    sentinel:
+      master: mymaster
+      nodes: localhost:26379
 
 server:
   port: ${port:9060}
@@ -55,3 +56,6 @@ logging:
     org.springframework.ws.client.MessageTracing.received: 'TRACE'
     com.netflix.discovery: 'INFO'
     org.springframework.cloud: 'DEBUG'
+    
+services:
+  addresses: addresses-v1
