@@ -76,7 +76,7 @@ hystrix:
 
 logging:
   level:
-    root: debug
+    root: info
 ---
 spring:
   profiles: instance-1
