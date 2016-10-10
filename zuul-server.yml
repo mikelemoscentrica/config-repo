@@ -7,8 +7,13 @@ zuul:
     addresses-v1:
       path: /v1/addresses/**
       stripPrefix: false
-    customers-v1:
+    oam-customer-v1:
       path: /v1/customers/**
+      serviceId: customers-v1
+      stripPrefix: false
+    oam-premises-v1:
+      path: /v1/premises/**
+      serviceId: customers-v1
       stripPrefix: false
 
 cors:
