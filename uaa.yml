@@ -29,7 +29,7 @@ endpoints:
     enabled: false
 
 cqServers:
- defaultHost: 'https://localhost'
+ defaultHost: 'https://localhost:9033'
  servers:
    ? localhost
    : {
