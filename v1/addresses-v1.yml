@@ -1,9 +1,10 @@
 spring:
   rabbitmq:
     addresses: localhost:5672
-
-memcached:
-  addresses: localhost:11211
+  redis:
+    sentinel:
+      master: mymaster
+      nodes: localhost:26379
 
 server:
   servlet-path: /management
