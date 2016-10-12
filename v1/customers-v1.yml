@@ -61,9 +61,7 @@ hystrix:
 
 logging:
   level:
-    org.springframework.ws.client.MessageTracing.sent: 'TRACE'
-    org.springframework.ws.client.MessageTracing.received: 'TRACE'
-    org.apache.http.wire: 'DEBUG'
+    ROOT: 'DEBUG'
     
 services:
   addresses: addresses-v1
