@@ -61,6 +61,8 @@ hystrix:
 
 logging:
   level:
+    org.spring: 'INFO'
+    org.apache: 'INFO'
     ROOT: 'DEBUG'
     
 services:
