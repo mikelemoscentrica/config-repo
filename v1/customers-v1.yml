@@ -29,7 +29,7 @@ management:
 customer:
   info:
     caller:
-      endpoint: http://193.67.163.110/tpicxtmqa/XISOAPAdapter/MessageServlet?senderParty=Online&senderService=BSR_WebService_PI&receiverParty=&receiverService=&interface=PartyManagementManageCustomer24x7&interfaceNamespace=urn%3Abritishgas.co.uk%3AOnline%3AParty
+      endpoint: http://193.67.163.82/tpicxtmqa/XISOAPAdapter/MessageServlet?senderParty=Online&senderService=BSR_WebService_PI&receiverParty=&receiverService=&interface=PartyManagementManageCustomer24x7&interfaceNamespace=urn%3Abritishgas.co.uk%3AOnline%3AParty
       expiry: 3600
 
 webservice:
@@ -38,7 +38,7 @@ webservice:
     password: '{cipher}AQCQJYTqfmP7HwD0/09qqHxDwYenEnUB7sB9r9nqQGOWYQlUigdqKrn5OaIsKkUmd28rmBbwyN3DmsNL0x9RA9kdZpsOyWgyVgCunJbmiIx2lLbvJmtRfsSx2YadXppwNFxhyYpDvD2VhapvTK00eUwUd0qoxJQSkL30ynJH+JGpORgqhU7frh2Ue/8ns5eScpaBxDPFQTy2gIwO3qhXISi/bUJHO8GPL7Q74qqgMXIZF4vAu+Vca96JLdPsopKUpAihde2WxtccZ53m3wfY+MjuQrCwAKl2kAFWVdKONybdnJBV3Gy79VI/2JP92GNF6t2rRV/fpESWFTgihXsZjlK9qK8vIoqXS8R0fb65K0fdVYE7ssYIEf+zrcimiLVmqxM='
 
 odata:
-  host: http://193.67.163.110/tngwntmqa
+  host: http://193.67.163.82/tngwntmqa
   authorization: '{cipher}AQBe1Ju9o+yuU15WoWxe9VeNUFnm69fW7sK6dWAZwmpxdi+ieYzyWIX+JYZiIDGM0bObhepMydhGVyEDKVEu1EH/t9UEwO2WB3hxe/W0fQy987MvMPz1tjWdtQ5QIs510VuwPn9SSDOJAYKY5qoAfehI/SJ1yjS2dzqwgADF1+FqRoIYglO0iNwC3EL1ih1VzWB0jG5kPVp7SM3wCfADwXmeTTb2u9GSvzFNsn4zWd+JFNTU08CbgLoN+hUq2whxHxxn0NXnHwJnJU54RKj8lbv267sZhKdLCYXTdzbwLJDPYTK4CnwQd4mRa06IIuPOsAnlja4SMLqhlFuFNjUrydk3eUIGxXsovFV6JhTpH+cWtOxi9vXXtZiluX+hunnevlEe4r0q7jr/pyJK7abli/4N'
   
 eureka:
