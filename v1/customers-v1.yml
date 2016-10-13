@@ -63,7 +63,7 @@ logging:
   level:
     org.spring: 'INFO'
     org.apache: 'INFO'
-    ROOT: 'DEBUG'
+    ROOT: 'INFO'
     
 services:
   addresses: addresses-v1
