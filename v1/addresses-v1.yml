@@ -29,7 +29,8 @@ eureka:
 
 logging:
   level:
-    ROOT: DEBUG
+    org.springframework.ws.client.MessageTracing: TRACE
+    ROOT: INFO
 ---
 spring:
   profiles: instance-1
