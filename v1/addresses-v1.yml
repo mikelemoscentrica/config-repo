@@ -27,6 +27,9 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
     registry-fetch-interval-seconds: 5
 
+logging:
+  level:
+    ROOT: DEBUG
 ---
 spring:
   profiles: instance-1
