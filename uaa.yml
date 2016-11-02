@@ -57,9 +57,7 @@ services:
 
 logging:
   level:
-    ROOT: INFO
-    uk.co.britishgas: DEBUG
-    com.netflix.discovery: ERROR
+    ROOT: DEBUG
 
 server:
   error:
