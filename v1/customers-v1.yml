@@ -61,9 +61,7 @@ hystrix:
 
 logging:
   level:
-    org.spring: 'INFO'
-    org.apache: 'INFO'
-    ROOT: 'INFO'
+    org.springframework.ws.client.MessageTracing: 'TRACE'
     
 services:
   addresses: addresses-v1
