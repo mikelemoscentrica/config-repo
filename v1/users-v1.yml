@@ -1,10 +1,6 @@
 spring:
   rabbitmq:
     addresses: localhost:5672
-  redis:
-    sentinel:
-      master: mymaster
-      nodes: localhost:26379
 
 server:
   servlet-path: /management
@@ -28,7 +24,7 @@ services:
 
 logging:
   level:
-    ROOT: INFO
+    ROOT: DEBUG
 ---
 spring:
   profiles: instance-1
