@@ -65,3 +65,4 @@ logging:
     
 services:
   addresses: addresses-v1
+  energy: energy-v1
