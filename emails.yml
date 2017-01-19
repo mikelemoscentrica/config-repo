@@ -70,10 +70,10 @@ spring:
  profiles: instance-1
 
 server:
- port: ${port:9010}
+ port: ${port:11010}
 
 management:
- port: 9110
+ port: 11110
 
 eureka:
  instance:
@@ -84,10 +84,10 @@ spring:
  profiles: instance-2
 
 server:
- port: ${port:9011}
+ port: ${port:11011}
 
 management:
- port: 9111
+ port: 11111
 
 
 eureka:
@@ -99,10 +99,10 @@ spring:
  profiles: instance-3
 
 server:
- port: ${port:9012}
+ port: ${port:11012}
 
 management:
- port: 9112
+ port: 11112
 
 eureka:
  instance:
