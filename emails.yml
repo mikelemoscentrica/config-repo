@@ -1,0 +1,110 @@
+spring:
+ datasource:
+   driverClassName: oracle.jdbc.driver.OracleDriver
+   url: ${jdbc.url:jdbc:oracle:thin:@localhost:1521:xe}
+   username: ${jdbc.username:ol_master}
+   password: ${jdbc.password:password12}
+   testOnBorrow: true
+   validationQuery: SELECT 1 FROM DUAL
+   maxWait: 1000
+ rabbitmq:
+   addresses: localhost:5672
+   username: guest
+   password: guest
+ redis:
+   sentinel:
+     master: mymaster
+     nodes: localhost:26379
+ cloud:
+   stream:
+     bindings:
+       input:
+         group: email-service
+         destination: emails
+       output:
+         destination: emails
+ mail:
+   host: ${smtp.host:localhost}
+   port: ${smtp.port:25}
+   smtp:
+     starttls:
+       enable: true
+
+ribbon:
+ eureka:
+  enabled: false
+
+cqServer:
+ url: http://193.67.163.82
+ secure.url: https://193.67.163.82
+
+server:
+ servlet-path: /management
+
+eureka:
+ instance:
+   statusPageUrlPath: ${server.servlet-path}/info
+   healthCheckUrlPath: ${server.servlet-path}/health
+ client:
+   healthcheck:
+     enabled: true
+   serviceUrl:
+     defaultZone: http://localhost:8761/eureka/
+   registry-fetch-interval-seconds: 5
+
+hystrix:
+ command:
+   default:
+     execution:
+       isolation:
+         strategy: THREAD
+         thread:
+           timeoutInMilliseconds: 30000
+
+logging:
+ pattern:
+   console: '%d{yyyy-MM-dd HH:mm:ss.SSS} [trace=%X{X-Trace-Id:-},span=%X{X-Span-Id:-}] [%15.15t] %-40.40logger{39}: %m%n'
+   
+---
+spring:
+ profiles: instance-1
+
+server:
+ port: ${port:9010}
+
+management:
+ port: 9110
+
+eureka:
+ instance:
+   metadata-map:
+     instanceId: 1
+---
+spring:
+ profiles: instance-2
+
+server:
+ port: ${port:9011}
+
+management:
+ port: 9111
+
+
+eureka:
+ instance:
+   metadata-map:
+     instanceId: 2
+---
+spring:
+ profiles: instance-3
+
+server:
+ port: ${port:9012}
+
+management:
+ port: 9112
+
+eureka:
+ instance:
+   metadata-map:
+     instanceId: 3
